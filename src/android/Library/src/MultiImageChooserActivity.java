@@ -173,8 +173,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle(fakeR.getId("string", "processing_images_header"));
-        progress.setMessage(fakeR.getId("string", "processing_images_message"));
+        progress.setTitle(fakeR.getString("string", "processing_images_header"));
+        progress.setMessage(fakeR.getString("string", "processing_images_message"));
     }
     
     @Override
