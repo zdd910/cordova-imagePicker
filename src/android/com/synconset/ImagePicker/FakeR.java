@@ -42,7 +42,7 @@ public class FakeR {
 		return context.getResources().getIdentifier(key, group, packageName);
 	}
 	public String getString(String group, String key) {
-		return  context.getResources().getString(this.getId(key, group, packageName));
+		return  context.getResources().getString(getId(group,key));
 	}
 	public static int getId(Context context, String group, String key) {
 		return context.getResources().getIdentifier(key, group, context.getPackageName());
