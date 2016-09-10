@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
 	
-	[self.navigationItem setTitle:@"Loading..."];
+	[self.navigationItem setTitle:@"处理中..."];
 
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self.parent action:@selector(cancelImagePicker)];
 	[self.navigationItem setRightBarButtonItem:cancelButton];
@@ -85,7 +85,7 @@
 - (void)reloadTableView
 {
 	[self.tableView reloadData];
-	[self.navigationItem setTitle:@"Select an Album"];
+	[self.navigationItem setTitle:@"选择相册"];
 }
 
 - (BOOL)shouldSelectAsset:(ELCAsset *)asset previousCount:(NSUInteger)previousCount
